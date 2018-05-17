@@ -1,0 +1,9 @@
+:key: 'kmc_session'
+:secret: '+wtu1Bo0Ljr6CJejfhtq8FqgIFGNEGObzUXewv6PVNQ=' ### change me(`openssl rand -base64 32`)
+:server: 'ldap.box2.kmc.gr.jp'
+:base: 'ou=users,dc=box2,dc=kmc,dc=gr,dc=jp'
+:filter: '(&(objectClass=inetOrgPerson)(uid=%{username})(!(shadowExpire=*)))'
+
+:auth_host: 'https://auth.kmc.gr.jp'
+:allow: !ruby/regexp /\Ahttps?:\/\/[a-z0-9\-.]+\.(kmc\.gr\.jp)\//
+:title: '人間性チェッカー'
