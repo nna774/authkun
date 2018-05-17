@@ -24,4 +24,6 @@ run NginxOmniauthAdapter.app(
   secret: config[:secret],
   host: config[:auth_host],
   allowed_app_callback_url: config[:allow],
+  app_refresh_interval: config[:app_refresh_interval] || 60 * 60 * 24 * 2,
+  adapter_refresh_interval: config[:adapter_refresh_interval] || 60 * 60 * 24 * 7,
 )
