@@ -1,0 +1,2 @@
+# authkun
+omniauth ldap kun
